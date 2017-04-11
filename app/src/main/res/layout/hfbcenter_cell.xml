@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+              android:background="#ffffff"
+    >
+
+    <ImageView
+        android:id="@+id/hfbcenter_cell_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#dcdcdc"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/hfbcenter_cell_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:text="水动力饮料"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/hfbcenter_cell_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/APPBlue"
+        android:textSize="13sp"
+        android:text="25怀府币"
+        android:paddingBottom="10dp"
+        />
+
+
+
+
+
+</LinearLayout>

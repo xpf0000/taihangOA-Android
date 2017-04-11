@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+
+    <!--<TableLayout-->
+        <!--android:stretchColumns="1,2,3,4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<TableRow>-->
+
+            <TextView
+                android:text="aaaa"
+                android:id="@+id/time"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+
+            <TextView
+                android:text="aaa"
+                android:id="@+id/money"
+                android:paddingTop="@dimen/ui_10_dip"
+                android:gravity="center"
+                android:paddingBottom="@dimen/ui_10_dip"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+
+            <TextView
+                android:text="a"
+                android:id="@+id/title"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="1"
+                 />
+
+            <TextView
+                android:text="aa"
+                android:id="@+id/moremoney"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="1"
+                 />
+        <!--</TableRow>-->
+    <!--</TableLayout>-->
+</LinearLayout>

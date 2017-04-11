@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="APPBGColor">#F0F0F0</color>
+
+    <color name="APPOrangeJifen">#FF8A00</color>
+
+    <color name="APPOrangeDark">#F45C2B</color>
+    <color name="APPOrangeLight">#f1740a</color>
+
+    <color name="APPBlue">#059bf1</color>
+    <color name="APPTXTBlack">#333333</color>
+
+    <color name="buttonbule">#059bf1</color>
+    <color name="topbule">#059bf1</color>
+    <color name="background">#f2f2f2</color>
+    <color name="graly">#808082</color>
+    <color name="titlecolors">#02cc95</color>
+    <color name="bottom">#f9f9f9</color>
+    <color name="grarybackground">#f3f5f7</color>
+    <color name="linecolor">#e6e6e6</color>
+    <color name="lincolors">#bdbdbd</color>
+    <color name="blackcolor">#232323</color>
+    <color name="worldcolor">#cacaca</color>
+    <color name="worldblue">#0180eb</color>
+    <color name="worldorangle">#f96400</color>
+    <color name="vipworld">#ffeb63</color>
+    <color name="mallworld">#ff1a23</color>
+    <color name="carwash">#20cee2</color>
+    <color name="inspectionvehicle">#62ca7b</color>
+    <color name="drive">#f67876</color>
+    <color name="autoinsurance">#fa944c</color>
+    <color name="Learndrive">#87a1e9</color>
+    <color name="mainterance">#34d2ad</color>
+    <color name="mallgren">#02cc95</color>
+    <color name="Orange">#fc8835</color>
+    <color name="weatherbg">#26d3a4</color>
+    <color name="butbg">#21ACFC</color>
+    <color name="blue">#0000ff</color><!--蓝色 -->
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 灰色透明 -->
+    <color name="touming">#900F0F0F</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="none_color">#00000000</color>
+    <color name="aaa">#f6f6f6</color>
+    <color name="name">#676767</color>
+    <color name="time">#dcdcdc</color>
+    <color name="linr">#fcfcfc</color>
+    <color name="content">#5e5e5e</color>
+    <color name="cityname">#919191</color>
+    <color name="aaaa">#979797</color>
+    <color name="hui">#eeeeee</color>
+    <color name="zhutilan">#f4f4f4</color>
+    <color name="primary">#3f51b5</color>
+    <color name="primary_dark">#303f9f</color>
+    <color name="ripple">#F06292</color>
+    <color name="accent">#E91E63</color>
+    <color name="accent_pressed">#C2185B</color>
+    <color name="wh">#e0FFFAFA</color>
+</resources>

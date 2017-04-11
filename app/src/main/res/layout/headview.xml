@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:background="@mipmap/label_bg2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15sp"
+            android:textColor="@color/cityname"
+            android:layout_centerVertical="true"
+            android:text="帝都趋势" />
+        <TextView
+            android:id="@+id/view"
+            android:drawableLeft="@mipmap/eye_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="#cccccc"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="110" />
+    </RelativeLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_below="@id/lay"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:background="@color/grarybackground"-->
+        <!--android:layout_height="1dp">-->
+    <!--</LinearLayout>-->
+    <ImageView
+        android:id="@+id/uesrhead"
+        android:layout_width="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/lay"
+        android:src="@mipmap/my_face_icon" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lay"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/uesrhead"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/usename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableRight="@mipmap/man"
+            android:textColor="@color/cityname"
+            android:text="小落后" />
+
+        <TextView
+            android:id="@+id/time"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usename"
+            android:textColor="@color/time"
+            android:text="10小时前" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/content"
+        android:text="@string/app_name"
+        android:layout_below="@id/uesrhead"
+        android:padding="12dp"
+        android:textSize="16dp"
+        android:textColor="#303030"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <x.taihangOA.com.MyViews.MyGridView
+        android:id="@+id/photogrid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:layout_marginTop="-10dp"
+        android:horizontalSpacing="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp">
+    </x.taihangOA.com.MyViews.MyGridView>
+
+    <TextView
+        android:id="@+id/post"
+        android:text="@string/app_name"
+        android:layout_below="@id/photogrid"
+        android:paddingTop="@dimen/ui_10_dip"
+        android:paddingLeft="@dimen/ui_10_dip"
+        android:paddingRight="@dimen/ui_10_dip"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@mipmap/l_icon02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/zanlay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post"
+        android:background="#f1f1f1"
+        android:layout_marginTop="@dimen/ui_10_dip"
+        android:padding="2dp"
+        android:layout_marginRight="@dimen/ui_10_dip"
+        android:layout_marginBottom="@dimen/ui_10_dip"
+        android:layout_marginLeft="12sp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="2dp"
+            android:src="@mipmap/ic_to_like" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="0"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/zan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="啊啊啊啊啊啊登觉得很赞"
+
+            android:textColor="@color/butbg"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="#dddddd"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/zanlay"
+        android:layout_height="10dp"></LinearLayout>
+</RelativeLayout>

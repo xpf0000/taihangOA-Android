@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">太行OA</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">首页</string>
+    <string name="found">发现</string>
+    <string name="mine">我的</string>
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="userlogin">OA登陆</string>
+    <string name="username">用户名</string>
+    <string name="userpassword">密码</string>
+    <string name="surelogin">提交登陆</string>
+    <string name="zhanghao">账号</string>
+    <string name="keyword">输入关键词搜索</string>
+    <string name="messagecon">消息内容</string>
+    <string name="messagetitle">消息标题</string>
+    <string name="dianhua">电话</string>
+    <string name="QQ">Q Q</string>
+    <string name="email">E-mail</string>
+    <string name="zhuzhi">住址</string>
+    <string name="password">原密码</string>
+    <string name="newpassword">新密码</string>
+    <string name="sureword">确认密码</string>
+    <string name="intent_error">网络似乎出问题了</string>
+    <string name="nomore">没有更多内容了</string>
+    <string name="list_footer_loading">正在加载更多…</string>
+    <string name="list_footer_network_error">点击重新加载</string>
+    <string name="list_footer_end">已经到底了</string>
+</resources>

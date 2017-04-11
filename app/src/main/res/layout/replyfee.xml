@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonbule">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="物业随手拍"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activity_selectimg_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@mipmap/news_info_back_arrow01" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/linecolor"></LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <x.taihangOA.com.MyViews.MyGridView
+                    android:id="@+id/noScrollgridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp"></x.taihangOA.com.MyViews.MyGridView>
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/ed_bg"
+                    android:gravity="left|top"
+                    android:hint="说点什么吧..."
+                    android:padding="@dimen/ui_10_dip"
+                    android:textSize="15sp"></EditText>
+
+                <x.taihangOA.com.MyViews.MyGridView
+                    android:id="@+id/calss"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ui_10_dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp"></x.taihangOA.com.MyViews.MyGridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_10_dip"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:padding="5dp">
+
+                <RadioGroup
+                    android:id="@+id/check"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <!--<TextView-->
+                    <!--android:text="表扬"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+                    <RadioButton
+                        android:id="@+id/biaoyang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/procheckbox"
+                        android:textColor="@color/butbg"
+                        android:checked="true"
+                        android:text="表扬" />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="建议" />-->
+
+                    <RadioButton
+                        android:id="@+id/jianyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/procheckbox"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/ui_10_dip"
+                        android:text="建议"
+                         />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="反馈意见" />-->
+
+                    <RadioButton
+                        android:id="@+id/fankuiwenti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/procheckbox"
+                        android:layout_weight="1"
+                        android:text="反馈意见"
+                        android:layout_marginLeft="@dimen/ui_10_dip"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/linecolor"></LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="感谢您对小区的支持！"
+                    android:padding="@dimen/ui_10_dip"
+                    android:background="@color/white"
+                    android:layout_width="fill_parent"
+                    android:textColor="@color/butbg"
+                    android:textSize="12sp"
+                    android:drawableLeft="@mipmap/ic_plaint_blue"
+                    android:drawablePadding="@dimen/ui_10_dip"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

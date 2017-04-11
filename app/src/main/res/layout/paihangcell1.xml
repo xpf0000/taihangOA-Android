@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/paihangstroke1"
+    android:layout_marginTop="180dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="24sp"
+        android:textColor="@color/APPOrangeJifen"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/paihangcell1_img2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:riv_corner_radius="30dp"
+        android:scaleType="fitXY"
+        app:riv_border_width="0dp"
+        app:riv_border_color="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/home_head"
+        android:clickable="true"
+        android:tag="1"
+        />
+
+        <TextView
+            android:id="@+id/paihangcell1_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxx"
+            android:textSize="16sp"
+            android:textColor="@color/APPOrangeJifen"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/paihangcell1_day2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0天"
+        android:textSize="16sp"
+        android:textColor="@color/APPOrangeJifen"
+        android:layout_marginBottom="10dp"
+        />
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/paihangstroke2_1"
+            android:layout_marginTop="140dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="24sp"
+                android:textColor="@color/APPOrangeJifen"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/paihangcell1_img1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:riv_corner_radius="30dp"
+                android:scaleType="fitXY"
+                app:riv_border_width="0dp"
+                app:riv_border_color="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/home_head"
+                android:clickable="true"
+                android:tag="0"
+                />
+
+            <TextView
+                android:id="@+id/paihangcell1_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxxx"
+                android:textSize="16sp"
+                android:textColor="@color/APPOrangeJifen"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/paihangcell1_day1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0天"
+                android:textSize="16sp"
+                android:textColor="@color/APPOrangeJifen"
+                android:layout_marginBottom="50dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/paihangstroke2"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="24sp"
+                android:textColor="@color/APPOrangeJifen"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/paihangstroke3"
+        android:layout_marginTop="180dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="24sp"
+            android:textColor="@color/APPOrangeJifen"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/paihangcell1_img3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:riv_corner_radius="30dp"
+            android:scaleType="fitXY"
+            app:riv_border_width="0dp"
+            app:riv_border_color="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/home_head"
+            android:clickable="true"
+            android:tag="2"
+            />
+
+        <TextView
+            android:id="@+id/paihangcell1_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxx"
+            android:textSize="16sp"
+            android:textColor="@color/APPOrangeJifen"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/paihangcell1_day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0天"
+            android:textSize="16sp"
+            android:textColor="@color/APPOrangeJifen"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

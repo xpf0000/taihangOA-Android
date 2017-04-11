@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/ui_10_dip"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/ui_10_dip"
+        android:paddingRight="@dimen/ui_10_dip"
+        android:background="@drawable/message"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/message"
+        android:text="有新消息啦"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/ui_10_dip"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

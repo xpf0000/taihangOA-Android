@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/content"
+        android:text="aaaaa"
+        android:layout_marginTop="@dimen/ui_10_dip"
+        android:layout_below="@id/photo"
+        android:layout_marginLeft="10dp"
+        android:textColor="#303030"
+        android:maxLines="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="@dimen/ui_10_dip"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/name"
+        android:text="aaaaa"
+        android:textColor="#999999"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:maxLength="8"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/time"
+        android:text="aaaaa"
+        android:textColor="#999999"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

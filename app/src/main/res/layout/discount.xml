@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonbule">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@mipmap/news_info_back_arrow01" />
+
+        <TextView
+            android:id="@+id/titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="机构名称"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:visibility="invisible"
+            android:src="@mipmap/share_icon" />
+
+        <ImageView
+            android:id="@+id/collects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"
+            android:src="@mipmap/colle_icons" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:orientation="horizontal"
+        android:background="@color/linecolor"></LinearLayout>
+    <ImageView
+        android:id="@+id/saimg"
+
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="@color/touming"
+        android:layout_marginTop="-35dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/views"
+            android:layout_width="wrap_content"
+            android:text="浏览量:111"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/shares"
+            android:visibility="gone"
+            android:src="@mipmap/share_icon"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/ui_10_dip"
+            android:layout_height="wrap_content" />
+        <ImageView
+
+            android:src="@mipmap/colle_icons"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/ui_10_dip"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+           android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hd"
+            android:text="培训机构:"
+            android:layout_marginLeft="@dimen/ui_10_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/name"
+                android:text="@string/app_name"
+                android:layout_width="fill_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="@dimen/ui_10_dip"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/time"
+            android:text="@string/app_name"
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tel"
+            android:text="@string/app_name"
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            android:textColor="@color/graly"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/adress"
+            android:text="@string/app_name"
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            android:textColor="@color/graly"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/hd2"
+        android:padding="10dp"
+        android:text="报名信息"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ></WebView>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

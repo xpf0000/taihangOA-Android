@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:padding="@dimen/ui_10_dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/my_face_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/head"
+            android:orientation="vertical"
+            android:padding="@dimen/ui_10_dip">
+
+            <TextView
+                android:id="@+id/username"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="业主" />
+
+            <TextView
+                android:id="@+id/number"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:text="15638743223" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#1fffffff"
+        android:layout_marginTop="@dimen/ui_10_dip"
+        android:layout_marginBottom="@dimen/ui_10_dip"
+        android:text="业主小区" />
+
+    <ListView
+        android:id="@+id/houselist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+</LinearLayout>

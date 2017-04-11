@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/default_ptr_rotate.png",
+        "source": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/default_ptr_rotate.png"
+    },
+    {
+        "merged": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/default_ptr_flip.png",
+        "source": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/default_ptr_flip.png"
+    },
+    {
+        "merged": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/default_ptr_flip.png",
+        "source": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/default_ptr_flip.png"
+    },
+    {
+        "merged": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/default_ptr_rotate.png",
+        "source": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/default_ptr_rotate.png"
+    },
+    {
+        "merged": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/indicator_arrow.png",
+        "source": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/indicator_arrow.png"
+    },
+    {
+        "merged": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/indicator_arrow.png",
+        "source": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/indicator_arrow.png"
+    }
+]

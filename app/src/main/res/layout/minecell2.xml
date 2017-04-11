@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/left"
+        android:clickable="true"
+        android:onClick="leftClick"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态"
+            android:textColor="@color/APPBlue"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:id="@+id/left_txt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/APPBlue"
+            android:orientation="horizontal"
+            android:id="@+id/left_line"
+            >
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/right"
+        android:clickable="true"
+        android:onClick="leftClick"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资料"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:id="@+id/right_txt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f2f2f2"
+            android:id="@+id/right_line"
+            android:orientation="horizontal"
+            >
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:background="@color/APPBGColor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:text="收款商家:"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="焦百商厦"
+            android:paddingLeft="3dp"
+            android:textColor="@color/APPBlue"
+            android:layout_marginRight="15dp"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:text="充值金额:"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50元"
+            android:paddingLeft="3dp"
+            android:textColor="@color/APPBlue"
+            android:layout_marginRight="15dp"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:button="@color/transparent"
+                    android:background="@drawable/czbtn_selector"
+                    android:checked="true"
+                    android:text="50元"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@drawable/czbtn_selector"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:button="@color/transparent"
+                    android:background="@drawable/czbtn_selector"
+                    android:text="100元"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@drawable/czbtn_selector"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:button="@color/transparent"
+                    android:background="@drawable/czbtn_selector"
+                    android:text="150元"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@drawable/czbtn_selector"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:button="@color/transparent"
+                    android:background="@drawable/czbtn_selector"
+                    android:text="200元"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@drawable/czbtn_selector"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:button="@color/transparent"
+                    android:background="@drawable/czbtn_selector"
+                    android:text="输入金额"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@drawable/czbtn_selector"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:button="@color/transparent"
+                    android:background="@drawable/czbtn_selector"
+                    android:text="150元"
+                    android:gravity="center"
+                    android:textColor="@drawable/czbtn_selector"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:text="支付方式"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:layout_marginTop="12dp"
+                  android:padding="14dp"
+                  android:gravity="center_vertical"
+                  android:tag="充值卡"
+        >
+
+        <ImageView
+            android:id="@+id/card_cz_info_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/zhifubao"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/card_cz_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="支付宝支付"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/card_cz_info_tel"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="支持各个版本的支付宝用户使用"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/gouxuan"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_lq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/btn_bg"
+        android:text="立即充值"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:onClick="submit"
+        />
+
+
+</LinearLayout>

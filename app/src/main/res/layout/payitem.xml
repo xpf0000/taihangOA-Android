@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="@dimen/ui_10_dip"
+        android:src="@mipmap/iconfontdian" />
+
+    <TextView
+        android:id="@+id/title"
+        android:text="电费"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="立即缴费"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/ui_10_dip"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/iconfontcopy"
+        android:layout_height="wrap_content" />
+</LinearLayout>

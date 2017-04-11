@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_transparent">
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/item_popupwindows_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginRight="@dimen/ui_10_dip"
+            android:layout_marginLeft="@dimen/ui_10_dip"
+            android:background="@drawable/bt_nobgd"
+            android:text="拍照"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/item_popupwindows_Photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_10_dip"
+            android:layout_marginRight="@dimen/ui_10_dip"
+            android:layout_marginLeft="@dimen/ui_10_dip"
+            android:background="@drawable/bt_nobgd"
+            android:text="从相册中选取"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/item_popupwindows_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ui_10_dip"
+            android:background="@drawable/bt_nobgd"
+            android:text="取消"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

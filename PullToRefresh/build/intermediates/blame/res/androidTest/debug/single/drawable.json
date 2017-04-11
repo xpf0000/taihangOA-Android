@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
+        "source": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
+    },
+    {
+        "merged": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
+        "source": "/Users/X/Desktop/Android/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
+        "source": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
+        "source": "/Users/X/Desktop/WorkSpace/GitHub/City-Android/PullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
+    }
+]

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/user_name_icon"
+        android:hint="昵称 后续不可更改"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:drawableLeft="@mipmap/phone_no_icon"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/getcode"
+            android:background="@drawable/button_bg"
+            android:layout_width="80dp"
+            android:text="获取验证码"
+            android:textSize="12sp"
+            android:textColor="@color/graly"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+            android:onClick="getCode"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ver_code_icon"
+        android:hint="验证码"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/pass1"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/password_icon"
+        android:hint="密码"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/password_icon"
+        android:hint="确认密码"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/btn_bg"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:onClick="submit"
+        />
+
+
+</LinearLayout>

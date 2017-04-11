@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="8dp"
+              android:descendantFocusability="blocksDescendants"
+              android:paddingBottom="8dp"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+    >
+
+
+    <RadioButton
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@color/transparent"
+        android:background="@drawable/czbtn_selector"
+        android:text="100元/6次"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@drawable/czbtn_selector"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:focusable="false"
+        android:clickable="false"
+        />
+
+</LinearLayout>

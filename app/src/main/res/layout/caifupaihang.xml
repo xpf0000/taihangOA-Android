@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/caifupaihang_1242"
+    android:id="@+id/qiandaopaihang_bg"
+    >
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/qiandaopaihang_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:divider="@null"
+        >
+
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/paihangstroke5"
+        >
+
+        <TextView
+            android:id="@+id/qiandaopaihang_order"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="10dp"
+            />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/qiandaopaihang_header"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:riv_corner_radius="20dp"
+            android:scaleType="fitXY"
+            app:riv_border_width="0dp"
+            app:riv_border_color="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/home_head"
+            android:clickable="true"
+            android:onClick="chooseHeaderImg"
+            />
+
+        <TextView
+            android:id="@+id/qiandaopaihang_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxx"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/qiandaopaihang_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0天"
+            android:textSize="16sp"
+            android:textColor="@color/APPBlue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

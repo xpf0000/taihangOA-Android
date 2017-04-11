@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/all_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b5b5b5"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                style="@style/rb_main"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:drawableTop="@drawable/select_home"
+                android:text="@string/home"
+                android:textSize="12sp"
+                android:layout_marginRight="20dp"
+                />
+
+
+
+            <RadioButton
+                android:layout_marginLeft="15dp"
+                android:id="@+id/rb_daiban"
+                style="@style/rb_main"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:drawableTop="@drawable/select_found"
+                android:text="待办"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_my"
+                style="@style/rb_main"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:drawableTop="@drawable/select_mine"
+                android:text="@string/mine"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/bdage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textbg"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:text="1"
+            android:translationX="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

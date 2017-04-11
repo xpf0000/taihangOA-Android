@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/ui_10_dip"
+    android:paddingTop="@dimen/ui_10_dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_list_doc" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img"
+            android:layout_weight="1"
+            android:text="aaa"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/dowm"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@id/name"
+            android:layout_marginRight="@dimen/ui_10_dip"
+            android:background="@mipmap/down_icon"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@id/name"
+            android:layout_marginRight="@dimen/ui_10_dip"
+            android:background="@mipmap/del_icon"
+            android:gravity="center"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/press"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="70dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/butbg"
+    android:layout_marginBottom="3dp"
+    android:padding="3dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="10dp"
+    android:text="TextView" />

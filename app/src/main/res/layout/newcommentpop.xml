@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/touming"
+    android:gravity="bottom"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/popedttxt"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ed_bg"
+            android:gravity="left|top"
+            android:hint="说点什么吧..."
+            android:padding="@dimen/ui_10_dip"></EditText>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/back"
+                android:text="关闭"
+                android:textColor="@color/worldblue"
+                android:layout_width="fill_parent"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/update"
+                android:text="提交"
+                android:textColor="@color/worldblue"
+                android:layout_width="fill_parent"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
