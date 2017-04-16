@@ -68,8 +68,7 @@
                 android:checked="false"
                 android:drawableTop="@drawable/select_mine"
                 android:text="@string/mine"
-                android:textSize="12sp"
-                android:layout_marginLeft="20dp"
+                android:textSize="12sp"                android:layout_marginLeft="20dp"
                 />
         </RadioGroup>
         <TextView

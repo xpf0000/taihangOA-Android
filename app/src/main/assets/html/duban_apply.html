@@ -10,7 +10,8 @@
 	<style>
 		select{ text-align: right;color:#bdbdbd;}
 	.position_icon { display:block;width: 1rem; height: 1rem;background: url(../images/phone_icon.png) no-repeat;background-size: 1rem 2rem; position: absolute; right: 1rem; top: 0rem;background-position: 0 -1rem;}
-	</style>
+
+    </style>
 
     <script src="../js/require.js?v=1.0.1"></script>
 
@@ -51,7 +52,7 @@
                         待办人
                     </div>
                     <div class="aui-list-item-input">
-                        <input type="text" placeholder="请选择待办人" readonly v-model="douser.name" @click="douserChoose">
+                        <input type="text" placeholder="请选择待办人" disabled="true" readonly="true" v-model="douser.name" @click="douserChoose">
                     </div>
                 </div>
             </li>
@@ -65,7 +66,7 @@
                        应完成日期
                     </div>
                     <div class="aui-list-item-input">
-                        <input type="text" placeholder="请选择日期" readonly v-model="endtime" @click="dateChoose">
+                        <input type="text" placeholder="请选择日期" disabled="true" readonly v-model="endtime" @click="dateChoose">
                     </div>
                 </div>
             </li>
@@ -169,6 +170,11 @@
 
         function OnDoUserChoose(data)
         {
+            if(typeof data == "string" && data.constructor == String)
+            {
+                data = JSON.parse(data);
+            }
+
             vm.douser = data;
         }
 

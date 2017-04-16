@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/UtilLibrary/UtilLibrary.iml" filepath="$PROJECT_DIR$/UtilLibrary/UtilLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/taihangOA.iml" filepath="$PROJECT_DIR$/taihangOA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taihangOA-Android.iml" filepath="$PROJECT_DIR$/taihangOA-Android.iml" />
     </modules>
   </component>
 </project>

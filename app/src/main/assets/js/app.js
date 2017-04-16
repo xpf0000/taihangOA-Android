@@ -1,12 +1,5 @@
 function handleClicks(e) {
     var clicked = $(this);
-    var url = clicked.attr('href');
-
-    if(!url || url.indexOf('#') == 0 || url.indexOf('tel:') == 0)
-    {
-        return true;
-    }
-
     if(clicked.hasClass('back'))
     {
         if(clicked.data("back"))
@@ -18,8 +11,17 @@ function handleClicks(e) {
             sendMsgToAPP({'type':1,msg:'页面返回'});
         }
 
+        return;
     }
-    else if(url != undefined && url != null && url.indexOf('#') != 0 && url.indexOf('javascript:')<0)
+
+    var url = clicked.attr('href');
+
+    if(!url || url.indexOf('#') == 0 || url.indexOf('tel:') == 0)
+    {
+        return true;
+    }
+
+    if(url != undefined && url != null && url.indexOf('#') != 0 && url.indexOf('javascript:')<0)
     {
         sendMsgToAPP({'type':0,msg:'url跳转',url:url});
     }

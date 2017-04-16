@@ -13,13 +13,15 @@
 
 <body>
     <header class="aui-bar aui-bar-nav aui-bar-light" id="aui-header">
-        <a class="aui-pull-left aui-btn back">
+        <a class="aui-pull-left aui-btn back" href="#">
             <span class="aui-iconfont aui-icon-left"></span>
         </a>
         <div class="aui-title">车辆管理</div>
     </header>
 
-      <div class="aui-content" style="margin-top:2.25rem;padding-bottom: 2.3rem;" id="car_info">
+    <div id="car_info">
+
+      <div class="aui-content" style="margin-top:2.25rem;padding-bottom: 2.3rem;" >
         <div class="aui-timeline">
         <ul class="aui-list aui-form-list">
 			 <li class="aui-list-item">
@@ -128,7 +130,7 @@
                                 <li class="aui-list-item aui-list-item-middle" style="padding-left: 0.2rem;">
                                     <div class="aui-media-list-item-inner">
                                         <div class="aui-list-item-media" style="width: 2.6rem;">
-                                            <img src="../images/demo5.png" class="aui-img-round" >
+                                            <img :src="item.avatar ? item.avatar : '../images/home_head.png'" class="aui-img-round" >
                                         </div>
                                         <div class="aui-list-item-inner">
                                             <div class="aui-list-item-text">
@@ -162,7 +164,7 @@
                                             <li class="aui-list-item aui-list-item-middle" style="padding-left: 0.2rem;">
                                                 <div class="aui-media-list-item-inner">
                                                     <div class="aui-list-item-media" style="width: 2.6rem;">
-                                                        <img src="../images/demo5.png" class="aui-img-round" >
+                                                        <img :src="info.task.aheadpic ? info.task.aheadpic : '../images/home_head.png'" class="aui-img-round" >
                                                     </div>
                                                     <div class="aui-list-item-inner">
                                                         <div class="aui-list-item-text">
@@ -185,12 +187,15 @@
 
 
 </div>
-   <div class="b_btn" v-if="info.task.state == '0' || info.task.state == '1'">
-       <a class="page_b_btn3" @click="doAction(5)"><span>撤回</span></a>
-   </div>
+
 
       </div>
 
+        <div class="b_btn" v-if="info.task.state == '0' || info.task.state == '1'">
+            <a class="page_b_btn3" @click="doAction(5)"><span>撤回</span></a>
+        </div>
+
+    </div>
 
     <script>
 

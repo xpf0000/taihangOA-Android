@@ -33,7 +33,7 @@
         <div class="aui-title">物品选择</div>
     </header>
 
-     <div class="aui-content" style="margin-top:2.25rem; padding-bottom: 0.6rem;" id="office_choose">
+     <div style="margin-top:2.25rem; padding-bottom: 0.6rem; -webkit-overflow-scrolling: touch; word-break: break-all;" id="office_choose">
         <div class="aui-row">
             <div class="aui-col-xs-6" id="left_tab">
             <ul class="aui-list aui-list-noborder aui-margin-b-0" id="leftTab">
@@ -168,6 +168,25 @@
                             var lskd=$(".choose:checked").length;
                             $("#in_num").text(lskd);
 
+                            /* 注：name属性值相同的元素只能一个被选中； */
+
+                            var office_li = $('.office_li');
+                            office_li.click(function () {
+
+                                $(this).hasClass("office_li_checked") ?
+
+                                    $(this).removeClass("office_li_checked").find("input[type='checkbox']").prop("checked",false) :
+
+                                    $(this).addClass("office_li_checked").find("input[type='checkbox']").prop("checked",true);
+
+                                var lskd=$(".choose:checked").length;
+                                $("#in_num").text(lskd);
+
+
+                            });
+
+
+
                         });
 
                     }
@@ -175,25 +194,7 @@
                 });
 
 
-                /* 注：name属性值相同的元素只能一个被选中； */
 
-                $(function(){
-//   通过click事件来模拟多选按钮;
-                    $(document).on("click", ".office_li", function(){
-//     判断该元素被选中与否并返回与之对应的样式;
-                         $(this).hasClass("office_li_checked") ?
-
-                                $(this).removeClass("office_li_checked").find("input[type='checkbox']").prop("checked",false) :
-
-                                $(this).addClass("office_li_checked").find("input[type='checkbox']").prop("checked",true);
-
-                        var lskd=$(".choose:checked").length;
-                        $("#in_num").text(lskd);
-
-                        return false;
-                    });
-
-                });
 
 
 

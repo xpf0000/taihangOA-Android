@@ -255,6 +255,12 @@ define('Service',["XNet",'store'], function(XNet,store) {
             TaskGetTaskDaibanCount: function(callBack)
             {
                 var user = store.get("User");
+
+                if(!user)
+                {
+                    return;
+                }
+
                 var url = this.BaseUrl+"task.GetTaskDaibanCount&uid="+user.id+"&mobile="+user.account;
                 XNet.XGet( url, callBack);
             },

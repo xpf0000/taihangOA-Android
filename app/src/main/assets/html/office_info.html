@@ -23,16 +23,16 @@
         <div class="aui-title">物品详情</div>
     </header>
 
+<div id="office_info">
 
-
-    <section class="aui-content" style="margin-top:2.25rem; padding-bottom: 2.3rem;" id="office_info">
+    <section class="aui-content" style="margin-top:2.25rem; padding-bottom: 2.3rem;" >
     <div class="aui-timeline">
     <div class="aui-card-list-content">
                 <ul class="aui-list aui-media-list">
                     <li class="aui-list-item aui-list-item-middle" style="border-bottom: 0;">
                         <div class="aui-media-list-item-inner">
                             <div class="aui-list-item-media" style="width: 3rem;">
-                                <img src="../images/demo5.png" class="aui-img-round" >
+                                <img :src="info.task.cheadpic ? info.task.cheadpic : '../images/home_head.png'" class="aui-img-round" >
                             </div>
                             <div class="aui-list-item-inner">
                                 <div class="aui-list-item-text">
@@ -86,7 +86,7 @@
                                         <li class="aui-list-item aui-list-item-middle" style="padding-left: 0.2rem;">
                                             <div class="aui-media-list-item-inner">
                                                 <div class="aui-list-item-media" style="width: 2.6rem;">
-                                                    <img src="../images/demo5.png" class="aui-img-round" >
+                                                    <img :src="item.avatar ? item.avatar : '../images/home_head.png'" class="aui-img-round" >
                                                 </div>
                                                 <div class="aui-list-item-inner">
                                                     <div class="aui-list-item-text">
@@ -120,7 +120,7 @@
                                         <li class="aui-list-item aui-list-item-middle" style="padding-left: 0.2rem;">
                                             <div class="aui-media-list-item-inner">
                                                 <div class="aui-list-item-media" style="width: 2.6rem;">
-                                                    <img src="../images/demo5.png" class="aui-img-round" >
+                                                    <img :src="info.task.aheadpic ? info.task.aheadpic : '../images/home_head.png'" class="aui-img-round" >
                                                 </div>
                                                 <div class="aui-list-item-inner">
                                                     <div class="aui-list-item-text">
@@ -143,13 +143,15 @@
 
 
     </div>
-        <div class="b_btn" v-if="info.task.state == '0' || info.task.state == '1'">
-            <a class="page_b_btn3" @click="doAction(5)"><span>撤回</span></a>
-        </div>
 
-        </div>
 
         </section>
+
+    <div class="b_btn" style="padding: 0;" v-if="info.task.state == '0' || info.task.state == '1'">
+        <a class="page_b_btn3" @click="doAction(5)"><span>撤回</span></a>
+    </div>
+
+   </div>
 
    <script>
 

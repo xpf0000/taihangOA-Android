@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/aui.css" />
     <style>
 #sp_num{ color:red; font-weight:bold;font-size:0.7rem; padding:0 5px;}
+
 </style>
 
     <script src="../js/require.js?v=1.0.1"></script>
@@ -23,7 +24,9 @@
         <div class="aui-title">物品申请</div>
     </header>
 
-      <div class="aui-content" style="margin-top:2.6rem; padding-bottom: 2.3rem;" id="office_apply">
+    <div id="office_apply">
+
+      <div class="aui-content" style="margin-top:2.6rem; padding-bottom: 2.3rem;" >
         <ul class="aui-list aui-form-list">
         <li class="aui-list-item">
                 <div class="aui-list-item-inner">
@@ -83,16 +86,18 @@
                         审批人
                     </div>
                     <div class="aui-list-item-input">
-                        <input type="text" placeholder="" v-model="auditor" readonly>
+                        <input type="text" placeholder="" v-model="auditor" disabled="true" readonly="true">
                     </div>
                 </div>
             </li>
         </ul>
         </div> 
-        <div class="b_btn"><a href="#" class="aui-btn aui-btn-info aui-btn-block" @click="dosubmit">提交申请</a></div>
+
         </div>
 
+        <div class="b_btn"><a href="#" class="aui-btn aui-btn-info aui-btn-block" @click="dosubmit">提交申请</a></div>
 
+    </div>
 
 
     <script type="text/javascript">
@@ -240,6 +245,12 @@
 
         function OnResChoose(arr)
         {
+            if(typeof arr == "string" && arr.constructor == String)
+            {
+                arr = JSON.parse(arr);
+                arr = arr.info;
+            }
+
             var resid = "";
 
             $.each(arr,function(index,item){

@@ -126,7 +126,7 @@ button,input,select,textarea {
 .office_count {border: 1px solid #ecebeb;}
 .office_count span {width:2rem; display: block; color: #FF0004; margin: 0 auto; line-height: 1;}
 .office_btn { background: #349cf3; color: #fff;  line-height: 2.2rem; display: block;}
-.b_btn { padding: 0.2rem;position:fixed; top: auto; bottom: 0px;width:100%;}
+.b_btn { padding: 0;position:fixed; top: auto; bottom: 0px;width:100%;}
 .Letter_list { position:fixed;top:7rem;right:.8rem;}
 .Letter_list a { display:block; height: 1.1rem; line-height: 1.1rem; font-size: 0.7rem; color: #a6a6a6;}
 .aui-list .aui-class-item {

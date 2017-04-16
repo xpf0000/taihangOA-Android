@@ -18,7 +18,7 @@
 
 <body>
     <header class="aui-bar aui-bar-nav aui-bar-light" id="aui-header">
-        <a class="aui-pull-left aui-btn back">
+        <a class="aui-pull-left aui-btn back" href="aaa">
             <span class="aui-iconfont aui-icon-left"></span>
         </a>
         <div class="aui-title">车辆申请</div>
@@ -33,7 +33,7 @@
                 用车日期
             </div>
             <div class="aui-list-item-input" @click="dateChoose('stime')">
-                <input type="text" name="stime" v-model="stime" placeholder="请选择用车日期" readonly>
+                <input type="text" name="stime" v-model="stime" placeholder="请选择用车日期" disabled="true" readonly="true">
             </div>
         </li>
 
@@ -42,7 +42,7 @@
                     归还日期
                 </div>
                 <div class="aui-list-item-input" @click="dateChoose('etime')">
-                    <input type="text" name="etime" v-model="etime" placeholder="请选择归还日期" readonly>
+                    <input type="text" name="etime" v-model="etime" placeholder="请选择归还日期" disabled="true" readonly="true">
                 </div>
             </li>
 
@@ -74,20 +74,20 @@
                     </div>
                 </div>
             </li>
-             <li class="aui-list-item" tapmode onclick="openWin('text_win')">
+             <li class="aui-list-item">
                  <div class="aui-list-item-label ">
                      出发地
                  </div>
                  <div class="aui-list-item-input" @click="mapChoose('saddress')">
-                     <input type="text" name="saddress" v-model="saddress" placeholder="请选择出发地" readonly>
+                     <input type="text" name="saddress" v-model="saddress" placeholder="请选择出发地" disabled="true" readonly="true">
                  </div>
             </li>
-             <li class="aui-list-item" tapmode onclick="openWin('text_win')">
+             <li class="aui-list-item">
                  <div class="aui-list-item-label ">
                      目的地
                  </div>
                  <div class="aui-list-item-input" @click="mapChoose('eaddress')">
-                     <input type="text" name="eaddress" v-model="eaddress" placeholder="请选择目的地" readonly>
+                     <input type="text" name="eaddress" v-model="eaddress" placeholder="请选择目的地" disabled="true" readonly="true">
                  </div>
             </li>
             <li class="aui-list-item">
@@ -129,7 +129,7 @@
                         审批人
                     </div>
                     <div class="aui-list-item-input">
-                        <input type="text" placeholder="选择审批人" v-model="auditor.name" readonly style="color:#999;">
+                        <input type="text" placeholder="选择审批人" v-model="auditor.name" disabled="true" readonly="true">
                     </div>
                 </div>
             </li>
@@ -292,6 +292,10 @@
         function OnMapSelect(data)
         {
             console.log(data);
+            if(typeof data == "string" && data.constructor == String)
+            {
+                data = JSON.parse(data);
+            }
 
             if(data.flag == 'saddress')
             {

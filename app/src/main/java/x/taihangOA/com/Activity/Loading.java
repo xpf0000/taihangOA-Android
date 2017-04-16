@@ -62,7 +62,7 @@ public class Loading extends Activity {
         getImg();
 
         //logo.setVisibility(View.GONE);
-        welimg.setImageResource(R.mipmap.appad);
+        //welimg.setImageResource(R.mipmap.appad);
         welimg.setVisibility(View.VISIBLE);
         countdownView=(CountdownView)findViewById(R.id.cv_countdownViewTest1);
         breaks=(TextView)findViewById(R.id.breaks);
