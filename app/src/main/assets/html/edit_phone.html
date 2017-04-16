@@ -68,7 +68,7 @@
                                 {
                                     store.set("User",user);
                                     toast.success({title:'手机号更新成功'},function(){
-                                        sendMsgToAPP({'type':13,msg:'手机号更新成功'});
+                                        sendMsgToAPP({'type':13,msg:'手机号更新成功',info:user});
                                     });
                                 }
 

@@ -154,6 +154,12 @@
 
     function usergetinfo(u)
     {
+
+        if(typeof u == "string" && u.constructor == String)
+        {
+            u = JSON.parse(u);
+        }
+
         Store.set("User",u);
 
         Service.UsergetUserInfo(u.id, u.account,function(data){
