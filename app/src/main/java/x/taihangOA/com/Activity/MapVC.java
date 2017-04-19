@@ -2,7 +2,9 @@ package x.taihangOA.com.Activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +17,7 @@ import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
 import com.baidu.mapapi.map.MapPoi;
 import com.baidu.mapapi.map.MapStatus;
+import com.baidu.mapapi.map.MapStatusUpdate;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.Marker;
@@ -23,6 +26,7 @@ import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.search.core.SearchResult;
+import com.baidu.mapapi.search.geocode.GeoCodeOption;
 import com.baidu.mapapi.search.geocode.GeoCodeResult;
 import com.baidu.mapapi.search.geocode.GeoCoder;
 import com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener;
@@ -52,6 +56,7 @@ public class MapVC extends Activity implements BDLocationListener {
     String addressName = "";
     LatLng clatLng;
     String caddress = "";
+    EditText search = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +65,7 @@ public class MapVC extends Activity implements BDLocationListener {
         //获取地图控件引用
         mMapView = (MapView) findViewById(R.id.bmapView);
         addressTv = (TextView) findViewById(R.id.address);
+        search = (EditText) findViewById(R.id.search);
 
         mBaiduMap = mMapView.getMap();
 
@@ -82,11 +88,57 @@ public class MapVC extends Activity implements BDLocationListener {
 //        mBaiduMap.animateMapStatus(MapStatusUpdateFactory.newMapStatus(builder.build()));
 
 
+        search.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+
+                XNetUtil.APPPrintln(i);
+                XNetUtil.APPPrintln(keyEvent);
+                XNetUtil.APPPrintln(textView.getText().toString());
+                String address = textView.getText().toString().trim();
+                if(keyEvent != null && address.length() > 0)
+                {
+                    getAddress(address);
+                }
+
+
+                return false;
+            }
+        });
+
+
         geocode = GeoCoder.newInstance();
 
         geocode.setOnGetGeoCodeResultListener(new OnGetGeoCoderResultListener() {
             @Override
             public void onGetGeoCodeResult(GeoCodeResult geoCodeResult) {
+
+                XNetUtil.APPPrintln(geoCodeResult.getLocation());
+                XNetUtil.APPPrintln(geoCodeResult.getAddress());
+
+                LatLng latLng = geoCodeResult.getLocation();
+                String address = geoCodeResult.getAddress();
+                if(latLng != null && address != null) {
+                    addMarker(latLng);
+                    caddress = address;
+                    addressTv.setText(caddress);
+
+                    MapStatus mMapStatus = new MapStatus.Builder()
+                            .target(latLng)
+                            .zoom(18.0f)
+                            .build();
+                    //定义MapStatusUpdate对象，以便描述地图状态将要发生的变化
+                    MapStatusUpdate mMapStatusUpdate = MapStatusUpdateFactory.newMapStatus(mMapStatus);
+                    //改变地图状态
+                    mBaiduMap.animateMapStatus(mMapStatusUpdate);
+
+                }
+                else
+                {
+                    clatLng = null;
+                    caddress = "";
+                    addressTv.setText("检索失败,请检查输入地址");
+                }
 
             }
 
@@ -178,6 +230,12 @@ public class MapVC extends Activity implements BDLocationListener {
         geocode.reverseGeoCode(options);
     }
 
+    private void getAddress(String name)
+    {
+        GeoCodeOption option = new GeoCodeOption().address(name).city("");
+        geocode.geocode(option);
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -240,7 +298,7 @@ public class MapVC extends Activity implements BDLocationListener {
             LatLng ll = new LatLng(location.getLatitude(),
                     location.getLongitude());
             MapStatus.Builder builder = new MapStatus.Builder();
-            builder.target(ll).zoom(18.0f);
+            builder.target(ll).zoom(14.0f);
             mBaiduMap.animateMapStatus(MapStatusUpdateFactory.newMapStatus(builder.build()));
         }
 

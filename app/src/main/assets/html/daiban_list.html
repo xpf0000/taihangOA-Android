@@ -53,9 +53,9 @@
         </a>
     </header>
     <div id="daiban_list">
-    <section class="aui-content-padded">
+    <section class="aui-content-padded" >
 
-        <div class="aui-card-list" v-for="item in info">
+        <div class="aui-card-list" v-for="item in info" v-cloak>
            <a :href="url[item.type]+item.id">
             <div class="userinfo-header">
                 <div class="aui-info">

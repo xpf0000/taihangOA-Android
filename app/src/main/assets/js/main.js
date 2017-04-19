@@ -17,12 +17,14 @@ require.config({
         Service:'serviceApi',
         store:'store',
         json2:'json2',
+        swiper:'swiper-3.4.2.jquery.min',
     },
     shim:{
         vue: { deps: ['domReady'],exports: "vue" },
         app:{deps:['jq'],exports: "app"},
         dropload:{deps:['jq'],exports: "dropload"},
         store:{ deps: ['json2']},
+        swiper:{deps:['jq'],exports: "swiper"},
     }
 });
 

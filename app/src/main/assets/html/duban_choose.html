@@ -37,14 +37,14 @@
         <div class="aui-row">
             <div class="aui-col-xs-6" id="left_tab">
             <ul class="aui-list aui-list-noborder aui-margin-b-0" id="leftTab">
-                <li v-for="(item,index) in list" :class="index == 0 ? 'aui-class-item selected' : 'aui-class-item'" v-text="item.name"></li>
+                <li v-cloak v-for="(item,index) in list" :class="index == 0 ? 'aui-class-item selected' : 'aui-class-item'" v-text="item.name"></li>
             </ul>
             </div>
              <div class="aui-col-xs-6 tab_box" id="right_tab">
 
-            <div v-for="(item,index) in list" :class="index == 0 ? '':'hide'">
+            <div v-cloak v-for="(item,index) in list" :class="index == 0 ? '':'hide'">
 			<ul>
-           <li class="office_li" v-for="res in item.employees">
+           <li v-cloak class="office_li" v-for="res in item.employees">
                <span v-text="res.name"></span>
                <input type="checkbox" name="chooseBox" :data-id="res.id" :data-did="res.departmentid" class="choose hide" />
            </li>

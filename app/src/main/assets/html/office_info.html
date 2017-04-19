@@ -57,7 +57,7 @@
                 </li>
                 <div class="aui-collapse-content">
 
-                    <li class="aui-list-item" v-for="item in info.taskres">
+                    <li class="aui-list-item" v-cloak v-for="item in info.taskres">
                         <div class="aui-list-item-inner">
                             <div class="aui-list-item-title" v-text="item.name">U盘</div>
                             <div class="aui-list-item-right" style="font-size: 0.7rem">
@@ -71,7 +71,7 @@
         </div>
             <div class="p_info_memo">备注：<span v-text="info.task.mark"></span></div>
 
-        <div class="aui-timeline-item" style="min-height: 5rem;" v-for="(item,index) in info.taskstep">
+        <div class="aui-timeline-item" style="min-height: 5rem;" v-cloak v-for="(item,index) in info.taskstep">
 
             <div class="aui-timeline-item-label sc-info-icon"></div>
 
@@ -107,7 +107,7 @@
             </div>
         </div>
 
-        <div class="aui-timeline-item" style="min-height: 5rem;" v-if="info.task.state == '0'">
+        <div v-cloak class="aui-timeline-item" style="min-height: 5rem;" v-if="info.task.state == '0'">
             <div class="aui-timeline-item-label wait-info-icon"></div>
             <div class="aui-chat">
                 <div class="aui-timeline-item-inner">
@@ -147,7 +147,7 @@
 
         </section>
 
-    <div class="b_btn" style="padding: 0;" v-if="info.task.state == '0' || info.task.state == '1'">
+    <div v-cloak class="b_btn" style="padding: 0;" v-if="info.task.state == '0' || info.task.state == '1'">
         <a class="page_b_btn3" @click="doAction(5)"><span>撤回</span></a>
     </div>
 

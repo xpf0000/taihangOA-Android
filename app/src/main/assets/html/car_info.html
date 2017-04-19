@@ -115,7 +115,7 @@
                 </div>
             </li>
 </ul>
-            <div class="aui-timeline-item" style="min-height: 5rem;" v-for="(item,index) in info.taskstep">
+            <div class="aui-timeline-item" style="min-height: 5rem;" v-for="(item,index) in info.taskstep" v-cloak>
 
                 <div class="aui-timeline-item-label sc-info-icon"></div>
 
@@ -151,7 +151,7 @@
                 </div>
          </div>
 
-            <div class="aui-timeline-item" style="min-height: 5rem;" v-if="info.task.state == '0'">
+            <div v-cloak class="aui-timeline-item" style="min-height: 5rem;" v-if="info.task.state == '0'">
                 <div class="aui-timeline-item-label wait-info-icon"></div>
                 <div class="aui-chat">
                     <div class="aui-timeline-item-inner">
@@ -191,7 +191,7 @@
 
       </div>
 
-        <div class="b_btn" v-if="info.task.state == '0' || info.task.state == '1'">
+        <div class="b_btn" v-cloak v-if="info.task.state == '0' || info.task.state == '1'">
             <a class="page_b_btn3" @click="doAction(5)"><span>撤回</span></a>
         </div>
 

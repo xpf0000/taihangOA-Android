@@ -15,13 +15,12 @@ import rx.schedulers.Schedulers;
 
 public class XNetUtil {
 
-    static public boolean debug = true;
+    static public boolean debug = false;
 
     public interface OnHttpResult<T>
     {
         void onError(Throwable e);
         void onSuccess(T t);
-
     }
 
     final static public <T> void APPPrintln(T t)

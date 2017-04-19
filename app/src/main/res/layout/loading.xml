@@ -26,7 +26,9 @@
         android:visibility="gone"
         app:isHideTimeBackground="false"
         app:timeBgColor="#0000"
-        app:isShowTimeBgDivisionLine="false" />
+        app:isShowTimeBgDivisionLine="false"
+
+        />
 
 
     <LinearLayout
@@ -40,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
+        android:src="@mipmap/app_lanuch_750"
         />
 
     <ImageView
@@ -50,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
+
         />
     </LinearLayout>
     <TextView

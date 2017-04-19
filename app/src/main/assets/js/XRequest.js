@@ -23,7 +23,7 @@ define('XNet', ["jq"], function () {
                 },
                 error: function (err) {
                     console.log(err);
-                    callBack({});
+                    callBack({data:{code:1}});
                 }
             });
         },

@@ -61,7 +61,7 @@
 
 
 
-        <div class="aui-card-list" style="margin:0 10px;" v-for="item in info">
+        <div v-cloak class="aui-card-list" style="margin:0 10px;" v-for="item in info">
             <a :href="'office_info.html?id='+item.id">
                 <div class="userinfo-header">
                     <div class="aui-info">
@@ -74,9 +74,11 @@
                 <div class="aui-card-list-content-padded">
                     申请时间：<span v-text="item.create_time"></span>
                 </div>
-                <div class="aui-card-list-state">
+
+                <div class="aui-card-list-state" :style="item.state == 7 ? 'color:#47c479;' : 'color:#ff3535;'">
                     {{state[item.state]}}
                 </div>
+
             </a>
         </div>
 

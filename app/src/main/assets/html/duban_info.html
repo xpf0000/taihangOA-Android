@@ -13,7 +13,7 @@
 
 <body>
    <header class="aui-bar aui-bar-nav aui-bar-light" id="aui-header">
-        <a class="aui-pull-left aui-btn">
+        <a class="aui-pull-left aui-btn back" href="aaa">
             <span class="aui-iconfont aui-icon-left"></span>
         </a>
         <div class="aui-title">督查督办详情</div>
@@ -86,7 +86,7 @@
             </ul>
             <div class="p_info_memo" v-text="info.taskoverseer.content"></div>
 
-        <div class="aui-timeline-item" style="min-height: 5rem;" v-for="(item,index) in info.taskstep">
+        <div class="aui-timeline-item" style="min-height: 5rem;" v-cloak v-for="(item,index) in info.taskstep">
 
             <div class="aui-timeline-item-label sc-info-icon"></div>
 
@@ -122,7 +122,7 @@
             </div>
         </div>
 
-        <div class="aui-timeline-item" style="min-height: 5rem;" v-if="info.task.state == '4' || info.task.state == '6'">
+        <div v-cloak class="aui-timeline-item" style="min-height: 5rem;" v-if="info.task.state == '4' || info.task.state == '6'">
             <div class="aui-timeline-item-label wait-info-icon"></div>
             <div class="aui-chat">
                 <div class="aui-timeline-item-inner">
@@ -160,7 +160,7 @@
            </div>
             </section>
 
-   <div class="b_btn" v-if="info.task.state == '4'">
+   <div v-cloak class="b_btn" v-if="info.task.state == '4'">
        <a class="page_b_btn3" @click="doAction(5)"><span>撤回</span></a>
    </div>
 

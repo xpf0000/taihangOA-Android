@@ -37,7 +37,7 @@
         <div class="aui-searchbar-cancel" tapmod>取消</div>
     </div>
 
-    <div :name="index" :id="index" class="aui-card-list" v-for="(item,index) in info">
+    <div :name="index" :id="index" class="aui-card-list" v-cloak v-for="(item,index) in info">
         <div class="aui-card-list-header" style="background: #f0f4f3;">
             <div><span v-text="item.name"></span></div>
         </div>
@@ -46,7 +46,7 @@
 
                 <a class="aui-list-item aui-list-item-middle"
                    :href="'phone_info.html?name='+user.name+'&avatar='+user.avatar+'&sex='+user.sex+'&dname='+item.name+'&mobile='+user.mobile"
-                   v-for="user in item.employees">
+                    v-cloak  v-for="user in item.employees">
                     <div class="aui-media-list-item-inner">
                         <div class="aui-list-item-media" style="width: 3rem;">
                             <span >
@@ -65,7 +65,7 @@
 
 
     <div class="Letter_list">
-        <a :href="'#'+index" v-for="(item,index) in info" v-text="item.name"></a>
+        <a :href="'#'+index" v-cloak v-for="(item,index) in info" v-text="item.name"></a>
     </div>
 </section>
 

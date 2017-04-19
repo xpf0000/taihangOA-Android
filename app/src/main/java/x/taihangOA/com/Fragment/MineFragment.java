@@ -60,11 +60,11 @@ public class MineFragment extends Fragment {
         // 设置支持JavaScript等
         WebSettings mWebSettings = web.getSettings();
         mWebSettings.setJavaScriptEnabled(true);
-        mWebSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
+        mWebSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
         mWebSettings.setDomStorageEnabled(true);
-        mWebSettings.setDatabaseEnabled(false);
-        mWebSettings.setGeolocationEnabled(false);
-        mWebSettings.setAppCacheEnabled(false);
+        mWebSettings.setDatabaseEnabled(true);
+        mWebSettings.setGeolocationEnabled(true);
+        mWebSettings.setAppCacheEnabled(true);
 
         web.setWebViewClient(new WebViewClient(){
 
@@ -186,6 +186,17 @@ public class MineFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         EventBus.getDefault().unregister(this);
+    }
+
+    public void reshowHeader()
+    {
+        if(web != null)
+        {
+            String js = "javascript:reshowHeader()";
+            XNetUtil.APPPrintln("$$$$$$$$$ js: "+js);
+            web.loadUrl(js);
+        }
+
     }
 
 

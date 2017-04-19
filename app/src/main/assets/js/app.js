@@ -11,7 +11,7 @@ function handleClicks(e) {
             sendMsgToAPP({'type':1,msg:'页面返回'});
         }
 
-        return;
+        return false;
     }
 
     var url = clicked.attr('href');
@@ -32,7 +32,7 @@ function handleClicks(e) {
 
 $(document).on('click', 'a', handleClicks);
 
-var ImagePrefix = 'http://adminoa.sssvip.net/data/upload/';
+var ImagePrefix = 'http://oonby7g6e.bkt.clouddn.com/';
 
 var APPSex = {1:'男',2:'女'};
 var TaskState = {0:'等待审核',1:'等待修改',2:'审核未通过',3:'审核通过',4:'等待接受',5:'拒绝接受',6:'等待完成',7:'已完成',8:'已取消'};

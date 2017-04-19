@@ -49,11 +49,11 @@ public class Login extends BaseHtmlVC {
         // 设置支持JavaScript等
         WebSettings mWebSettings = web.getSettings();
         mWebSettings.setJavaScriptEnabled(true);
-        mWebSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
+        mWebSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
         mWebSettings.setDomStorageEnabled(true);
-        mWebSettings.setDatabaseEnabled(false);
-        mWebSettings.setGeolocationEnabled(false);
-        mWebSettings.setAppCacheEnabled(false);
+        mWebSettings.setDatabaseEnabled(true);
+        mWebSettings.setGeolocationEnabled(true);
+        mWebSettings.setAppCacheEnabled(true);
 
         web.setWebViewClient(new WebViewClient(){
 

@@ -172,6 +172,9 @@ public class MainActivity extends TakePhotoFragmentActivity implements CompoundB
                         transaction.hide(MemberFragment);
                     }
                     transaction.show(HomeFragment);
+
+                    HomeFragment.reshowBanner();
+
                     break;
                 case R.id.rb_daiban:
                     if (MallFragment == null) {
@@ -204,6 +207,9 @@ public class MainActivity extends TakePhotoFragmentActivity implements CompoundB
                     }
 
                     transaction.show(MemberFragment);
+
+                    MemberFragment.reshowHeader();
+
                     break;
             }
             transaction.commitAllowingStateLoss();

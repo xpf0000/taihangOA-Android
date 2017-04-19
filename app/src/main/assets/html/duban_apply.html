@@ -8,8 +8,28 @@
   <meta name="x5-fullscreen" content="true" />
     <link rel="stylesheet" type="text/css" href="../css/aui.css" />
 	<style>
-		select{ text-align: right;color:#bdbdbd;}
+
 	.position_icon { display:block;width: 1rem; height: 1rem;background: url(../images/phone_icon.png) no-repeat;background-size: 1rem 2rem; position: absolute; right: 1rem; top: 0rem;background-position: 0 -1rem;}
+
+        .b_btn { padding: 0.2rem;position:fixed; top: auto; bottom: 0px;width:100%;}
+
+        ::-moz-placeholder { color: #424242;}
+        ::-webkit-input-placeholder { color:#424242;}
+        :-ms-input-placeholder { color:#424242; }
+
+        select{ text-align: right;color:#424242;}
+
+    input{
+        -webkit-text-fill-color:#424242;
+        -webkit-opacity:1;
+        color:#424242;
+    }
+
+    input[disabled]{
+        -webkit-text-fill-color:#424242;
+        -webkit-opacity:1;
+        color:#424242;
+    }
 
     </style>
 
@@ -24,7 +44,10 @@
         </a>
         <div class="aui-title">发布督办</div>
     </header>
-    <div class="aui-content" style="margin-top:2.6rem; padding-bottom: 2.3rem;" id="duban_apply">
+
+    <div id="duban_apply">
+
+    <div class="aui-content" style="margin-top:2.6rem; padding-bottom: 2.3rem;" >
         <ul class="aui-list aui-form-list">
         <li class="aui-list-item">
                 <div class="aui-list-item-inner">
@@ -51,8 +74,8 @@
                     <div class="aui-list-item-label">
                         待办人
                     </div>
-                    <div class="aui-list-item-input">
-                        <input type="text" placeholder="请选择待办人" disabled="true" readonly="true" v-model="douser.name" @click="douserChoose">
+                    <div class="aui-list-item-input" @click="douserChoose">
+                        <input type="text" name="douser" placeholder="请选择待办人" disabled="true" readonly="true" v-model="douser.name" >
                     </div>
                 </div>
             </li>
@@ -65,8 +88,8 @@
                     <div class="aui-list-item-label">
                        应完成日期
                     </div>
-                    <div class="aui-list-item-input">
-                        <input type="text" placeholder="请选择日期" disabled="true" readonly v-model="endtime" @click="dateChoose">
+                    <div class="aui-list-item-input" @click="dateChoose">
+                        <input type="text" name="endtime" placeholder="请选择日期" disabled="true" readonly="true" v-model="endtime" >
                     </div>
                 </div>
             </li>
@@ -77,16 +100,13 @@
          </div>
         </div>
 
+    </div>
 
     <script type="text/javascript">
 
         var vm = null;
         requirejs(['../js/main'], function (main) {
-            require(['vue','Service','api','app'], function(Vue,Service) {
-
-                apiready = function () {
-                    api.parseTapmode();
-                }
+            require(['vue','Service','app'], function(Vue,Service) {
 
                 vm = new Vue({
                     el: '#duban_apply',

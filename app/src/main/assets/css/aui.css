@@ -2766,3 +2766,15 @@ input[type="search"]::-webkit-search-cancel-button {
 .aui-icon-pencil:before { content: "\e615"; }
 .aui-icon-flag:before { content: "\e6f1"; }
 .aui-icon-cert:before { content: "\e704"; }
+
+.finish{
+	color: #179649;
+}
+
+.other{
+	color: #c11f14;
+}
+
+[v-cloak] {
+	display:none;
+}

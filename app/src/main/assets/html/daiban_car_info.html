@@ -114,7 +114,7 @@
             </li>
         </ul>
 
-        <div class="aui-timeline-item" style="min-height: 5rem;" v-for="(item,index) in info.taskstep">
+        <div class="aui-timeline-item" style="min-height: 5rem;" v-for="(item,index) in info.taskstep" v-cloak>
 
             <div class="aui-timeline-item-label sc-info-icon"></div>
 
@@ -152,7 +152,7 @@
 
 
 
-        <div class="aui-timeline-item" style="min-height: 5rem;" v-if="info.task.state == '0'">
+        <div v-cloak class="aui-timeline-item" style="min-height: 5rem;" v-if="info.task.state == '0'">
             <div class="aui-timeline-item-label wait-info-icon"></div>
             <div class="aui-chat">
                 <div class="aui-timeline-item-inner">
@@ -190,10 +190,10 @@
 
 
     <div class="b_btn">
-    <div class="page_b_btn02" v-if="info.task.state == '0' && uid == info.task.duid">
+    <div class="page_b_btn02" v-cloak v-if="info.task.state == '0' && uid == info.task.duid">
         <a class="page_b_btn1" @click="doAction(1)"><span>同意</span></a>
     </div>
-    <div class="page_b_btn02" v-if="info.task.state == '0' && uid == info.task.duid">
+    <div class="page_b_btn02" v-cloak v-if="info.task.state == '0' && uid == info.task.duid">
         <a class="page_b_btn2" @click="doAction(2)"><span>不同意</span></a>
     </div>
     </div>
