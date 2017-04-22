@@ -138,18 +138,23 @@
 
                     if(banner)
                     {
-                        banner.destroy(true,true);
-                        banner = null;
+                        banner.updateSlidesSize();
+                        banner.updatePagination();
+                        banner.updateClasses();
+//                        banner.removeAllSlides();
+//                        banner.destroy(true,true);
+//                        banner = null;
                     }
-
-                    banner = new Swiper ('.swiper-container', {
-                        loop: true,
-                        pagination: '.swiper-pagination',
-                        autoplay: 3000,
-                        autoplayDisableOnInteraction:false,
-                        height:150,
-                    });
-
+                    else
+                    {
+                        banner = new Swiper ('.swiper-container', {
+                            loop: true,
+                            pagination: '.swiper-pagination',
+                            autoplay: 3000,
+                            autoplayDisableOnInteraction:false,
+                            height:150,
+                        });
+                    }
 
                 });
 

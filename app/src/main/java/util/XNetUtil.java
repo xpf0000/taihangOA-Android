@@ -15,7 +15,7 @@ import rx.schedulers.Schedulers;
 
 public class XNetUtil {
 
-    static public boolean debug = false;
+    static public boolean debug = true;
 
     public interface OnHttpResult<T>
     {

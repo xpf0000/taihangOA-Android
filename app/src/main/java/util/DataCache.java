@@ -30,18 +30,11 @@ public class DataCache {
         {
             XNetUtil.APPPrintln("UserModel readed!!!!!!!!!!!!!");
             User = model;
-//            User.getUinfo();
-//            User.getUser();
-//            User.getMsgCount();
-//            if(!User.getUid().equals(""))
-//            {
-//                land = 1;
-//            }
-
         }
         else
         {
             ModelUtil.reSet(User);
+            User.unRegistNotice();
         }
 
         XNetUtil.APPPrintln("User: "+User.toString());

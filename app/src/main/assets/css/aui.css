@@ -973,7 +973,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .aui-list .aui-list-item-right,
 .aui-list-item-title-row em {
-	max-width: 50%;
+	/*max-width: 50%;*/
 	position: relative;
     font-size: 0.6rem;
     color: #999999;

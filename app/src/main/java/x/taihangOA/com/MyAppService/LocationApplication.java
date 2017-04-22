@@ -127,10 +127,6 @@ public class LocationApplication extends Application {
         super.onCreate();
         EventBus.getDefault().register(this);
 
-        String processName = XAPPUtil.getProcessName(this, android.os.Process.myPid());
-
-        XNetUtil.APPPrintln("processName: "+processName);
-
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
             public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
@@ -155,6 +151,16 @@ public class LocationApplication extends Application {
                     APPDataCache.User.checkToken();
                     XNetUtil.APPPrintln("APP is BecomeActive!!!!!!");
                 }
+
+                try
+                {
+                    XAPPUtil.isNetWorkAvailable(context);
+                }
+                catch (Exception e)
+                {
+
+                }
+
             }
 
             @Override
@@ -183,12 +189,6 @@ public class LocationApplication extends Application {
         });
 
         context = getApplicationContext();
-
-        XNetUtil.APPPrintln(context.getExternalCacheDir());
-        XNetUtil.APPPrintln(context.getCacheDir());
-
-        XNetUtil.APPPrintln(context.getExternalFilesDir(""));
-        XNetUtil.APPPrintln(context.getFilesDir());
 
         MemoryCache memoryCache= MemoryCacheUtils.createLruMemoryCache(1024*1024*256);
         CacheLoaderConfiguration config = new CacheLoaderConfiguration(this, new HashCodeFileNameGenerator(), 1024 * 1024 * 1024*64, 200000, memoryCache,60*24*30*365*20);
@@ -347,8 +347,16 @@ public class LocationApplication extends Application {
             pushService.register(applicationContext, new CommonCallback() {
                 @Override
                 public void onSuccess(String response) {
-
                     XNetUtil.APPPrintln("init cloudchannel success");
+
+                    if(APPDataCache != null)
+                    {
+                        if(APPDataCache.User.getId().equals(""))
+                        {
+                            APPDataCache.User.unRegistNotice();
+                        }
+                    }
+
 
                 }
                 @Override

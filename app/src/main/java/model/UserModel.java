@@ -174,12 +174,7 @@ public class UserModel implements Serializable {
 
     public void unRegistNotice()
     {
-        if(getId() == null)
-        {
-            return;
-        }
-
-        PushServiceFactory.getCloudPushService().removeAlias(getId(),new CommonCallback() {
+        PushServiceFactory.getCloudPushService().removeAlias(null,new CommonCallback() {
             @Override
             public void onSuccess(String s) {
                 XNetUtil.APPPrintln("removeAlias success!!!!!!");

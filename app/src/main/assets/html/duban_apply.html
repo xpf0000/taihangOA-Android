@@ -13,22 +13,22 @@
 
         .b_btn { padding: 0.2rem;position:fixed; top: auto; bottom: 0px;width:100%;}
 
-        ::-moz-placeholder { color: #424242;}
-        ::-webkit-input-placeholder { color:#424242;}
-        :-ms-input-placeholder { color:#424242; }
+        ::-moz-placeholder { color: #757575;}
+        ::-webkit-input-placeholder { color:#757575;}
+        :-ms-input-placeholder { color:#757575; }
 
-        select{ text-align: right;color:#424242;}
+        select{ text-align: right;color:#757575;}
 
     input{
-        -webkit-text-fill-color:#424242;
+        -webkit-text-fill-color:#757575;
         -webkit-opacity:1;
-        color:#424242;
+        color:#757575;
     }
 
     input[disabled]{
-        -webkit-text-fill-color:#424242;
+        -webkit-text-fill-color:#757575;
         -webkit-opacity:1;
-        color:#424242;
+        color:#757575;
     }
 
     </style>
@@ -75,7 +75,7 @@
                         待办人
                     </div>
                     <div class="aui-list-item-input" @click="douserChoose">
-                        <input type="text" name="douser" placeholder="请选择待办人" disabled="true" readonly="true" v-model="douser.name" >
+                        <input type="text" name="douser" placeholder="请选择待办人" disabled="true" readonly v-model="douser.name" >
                     </div>
                 </div>
             </li>
@@ -89,7 +89,7 @@
                        应完成日期
                     </div>
                     <div class="aui-list-item-input" @click="dateChoose">
-                        <input type="text" name="endtime" placeholder="请选择日期" disabled="true" readonly="true" v-model="endtime" >
+                        <input type="text" name="endtime" placeholder="请选择日期" disabled="true" readonly v-model="endtime" >
                     </div>
                 </div>
             </li>

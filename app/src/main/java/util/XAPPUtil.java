@@ -343,13 +343,13 @@ public class XAPPUtil {
                     return true;
                 } else {
 
-                    Toast.makeText(context, "无网络连接,请检查网络", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "未检测到网络连接,请检查网络", Toast.LENGTH_SHORT).show();
 
                     return false;
                 }
             } else {
 
-                Toast.makeText(context, "无网络连接,请检查网络", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "未检测到网络连接,请检查网络", Toast.LENGTH_SHORT).show();
 
                 return false;
             }

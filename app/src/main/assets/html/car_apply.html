@@ -11,25 +11,25 @@
 
 		.b_btn { padding: 0.2rem;position:fixed; top: auto; bottom: 0px;width:100%;}
 
-        ::-moz-placeholder { color: #424242;}
-        ::-webkit-input-placeholder { color:#424242;}
-        :-ms-input-placeholder { color:#424242; }
+        ::-moz-placeholder { color: #757575;}
+        ::-webkit-input-placeholder { color:#757575;}
+        :-ms-input-placeholder { color:#757575; }
 
         select{
             text-align: right;
-            color:#424242;
+            color:#757575;
         }
 
         input{
-            -webkit-text-fill-color:#424242;
+            -webkit-text-fill-color:#757575;
             -webkit-opacity:1;
-            color:#424242;
+            color:#757575;
         }
 
         input[disabled]{
-            -webkit-text-fill-color:#424242;
+            -webkit-text-fill-color:#757575;
             -webkit-opacity:1;
-            color:#424242;
+            color:#757575;
         }
 
 	</style>
@@ -55,7 +55,7 @@
                 用车日期
             </div>
             <div class="aui-list-item-input" @click="dateChoose('stime')">
-                <input type="text" name="stime" v-model="stime" placeholder="请选择用车日期" disabled="true" readonly="true">
+                <input type="text" name="stime" v-model="stime" placeholder="请选择用车日期" disabled="true" readonly>
             </div>
         </li>
 
@@ -64,7 +64,7 @@
                     归还日期
                 </div>
                 <div class="aui-list-item-input" @click="dateChoose('etime')">
-                    <input type="text" name="etime" v-model="etime" placeholder="请选择归还日期" disabled="true" readonly="true">
+                    <input type="text" name="etime" v-model="etime" placeholder="请选择归还日期" disabled="true" readonly>
                 </div>
             </li>
 
@@ -101,7 +101,7 @@
                      出发地
                  </div>
                  <div class="aui-list-item-input" @click="mapChoose('saddress')">
-                     <input type="text" name="saddress" v-model="saddress" placeholder="请选择出发地" disabled="true" readonly="true">
+                     <input type="text" name="saddress" v-model="saddress" placeholder="请选择出发地" disabled="true" readonly>
                  </div>
             </li>
              <li class="aui-list-item">
@@ -109,7 +109,7 @@
                      目的地
                  </div>
                  <div class="aui-list-item-input" @click="mapChoose('eaddress')">
-                     <input type="text" name="eaddress" v-model="eaddress" placeholder="请选择目的地" disabled="true" readonly="true">
+                     <input type="text" name="eaddress" v-model="eaddress" placeholder="请选择目的地" disabled="true" readonly>
                  </div>
             </li>
             <li class="aui-list-item">
@@ -151,7 +151,7 @@
                         审批人
                     </div>
                     <div class="aui-list-item-input">
-                        <input type="text" placeholder="选择审批人" v-model="auditor.name" disabled="true" readonly="true">
+                        <input type="text" placeholder="选择审批人" v-model="auditor.name" disabled="true" readonly>
                     </div>
                 </div>
             </li>

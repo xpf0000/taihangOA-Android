@@ -34,7 +34,22 @@ public class Message extends MessageReceiver {
 
         if(cPushMessage.getTitle().equals("账号在其它设备已登录"))
         {
-            if(APPDataCache.User.getToken().length() > 0 && !APPDataCache.User.getToken().equals(cPushMessage.getContent()))
+            String msg = cPushMessage.getContent();
+            String[] marr = msg.split("\\|");
+
+            XNetUtil.APPPrintln(msg);
+            XNetUtil.APPPrintln(marr.length);
+
+            for(String s : marr)
+            {
+                XNetUtil.APPPrintln(s);
+            }
+
+            XNetUtil.APPPrintln(marr.toString());
+
+            boolean s = marr[0].equals(APPDataCache.User.getId());
+            boolean r = marr[1].equals(APPDataCache.User.getToken());
+            if(APPDataCache.User.getToken().length() > 0 && s && !r)
             {
                 EventBus.getDefault().post(new MyEventBus("AccountLogout"));
             }
